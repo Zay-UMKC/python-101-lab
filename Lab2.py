@@ -18,7 +18,7 @@ if Exam_grade > 100:
 Attend_grade = float(input('Enter the Attendance grade? ==> '))
 if Attend_grade < 0:
     Attend_grade = 0
-    print('The Exam value should have been zero or greater. it had been changed to zero')
+    print('The Attendance value should have been zero or greater. it had been changed to zero')
 if Attend_grade > 100:
     Attend_grade = 100
     print('The Attendance value should have been 100 or less.It has been changed to 100.')   
