@@ -6,7 +6,8 @@ Lab_grade = float(input('Enter the labs grade? ==> '))
 if Lab_grade > 100:
     Lab_grade = 100
     print('The Lab value should have been 100 or less.It has been changed to 100.')
-if Lab_grade < 0:
+elif Lab_grade < 0:
+    Lab_grade = 0
     print('The lab value should have been zero or greater. it had been changed to zero')
 Exam_grade = float(input('Enter the Exams grade? ==> '))
 if Exam_grade < 0: 
@@ -23,7 +24,7 @@ if Attend_grade > 100:
     Attend_grade = 100
     print('The Attendance value should have been 100 or less.It has been changed to 100.')   
 #line for calculations of users inputs for grades
-gpa = round((Lab_grade * 0.7) + (Exam_grade * 0.2) + (Attend_grade * .1),2)
+gpa = round((Lab_grade * 0.7) + (Exam_grade * 0.2) + (Attend_grade * .1),1)
 #Output of the GPA
 print(f'The weighted grade for {name} is {gpa}')
 #Finds what his grade will be depending on his Gpa avg
