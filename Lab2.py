@@ -1,13 +1,13 @@
 print('**** Welcome to the LAB grade calculator! ****')
 #allows for someone to input the name of person and numbers to be calculated
 name = input('Who are you calculating grades for? ==> ')
-lgrade = float(input('Enter the labs grade? ==> '))
-Egrade = float(input('Enter the Exams grade? ==> '))
-Agrade = float(input('Enter the Attendance grade? ==> '))
+Lab_grade = float(input('Enter the labs grade? ==> '))
+Exam_grade = float(input('Enter the Exams grade? ==> '))
+Attend_grade = float(input('Enter the Attendance grade? ==> '))
 #line for calculations of users inputs for grades
-total = round((lgrade * 0.7) + (Egrade * 0.2) + (Agrade * .1),2)
+gpa = round((Lab_grade * 0.7) + (Exam_grade * 0.2) + (Attend_grade * .1),2)
 #Output of the GPA
-print(f'The weighted grade for {name} is {total}')
+print(f'The weighted grade for {name} is {gpa}')
 #Finds what his grade will be depending on his Gpa avg
 if total <= 100:
     letter = 'A'
